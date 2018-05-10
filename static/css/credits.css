@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'exo';
+  src: url('../fonts/exo.woff') format('woff');
+  src: url('../fonts/exo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal
+}
+
+h3 {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+  font-size: 30px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: url("../images/gameBackground.png") no-repeat center center;
+  background-color: inherit;
+  background-size : cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color : rgba(0,0,0,0.8);
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.container2 {
+  position: absolute;
+  bottom: 5;
+  right: 5;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.telecom {
+  position: absolute;
+  bottom: 5;
+  left: 5;
+  width: 200;
+  height: 99;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-image: url("../images/tel.png");
+}

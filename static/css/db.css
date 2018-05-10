@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'exo';
+  src: url('../fonts/exo.woff') format('woff');
+  src: url('../fonts/exo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal
+}
+
+.dbtext {
+  top: -20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  min-height: 25px;
+  position: relative;
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: url("../images/indexBackground.jpg") no-repeat center center;
+  background-size : cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.divtable {
+  margin-left: 10%;
+  width: 80%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.searchplus
+{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+#search {
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	width: 20%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+}
+
+#new {
+	background-repeat: no-repeat;
+	width: 5%;
+	font-size: 20px;
+  font-weight: bold;
+  color: rgba(100,100,100,1);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+  text-align:center;
+  border: 1px solid #ddd;
+  border-left-color: rgba(200,200,200,1);
+}
+
+.deleteimg {
+  width: 100%;
+  height: 100%;
+  background: url("../images/suppr.png") no-repeat;
+  border: none;
+}
+
+.deleteimg:hover
+{
+  cursor: pointer;
+}
+
+.deleteform {
+  width: 35px;
+  height: 35px;
+  border: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 18px;
+}
+
+.word
+{
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  max-width: 20px;
+}
+
+.def
+{
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  max-width: 20px;
+}
+
+th, td {
+	text-align: left;
+	padding: 12px;
+  border-right: 1px solid #ddd;
+}
+
+tr:nth-child(even){
+  background-color: rgba(200,200,200,0.95);
+}
+
+tr {
+  background-color: rgba(150,150,150,0.95);
+	border-bottom: 1px solid #ddd;
+}
+
+tr.header {
+  position: sticky;
+  top: 0;
+  color: white;
+	background-color: rgba(0,0,0,0.95);
+}
+
+tr:not(.header):hover {
+	background-color: rgba(100,100,100,1);
+  color: white;
+}
+
+tr:not(.header):hover .deletecase {
+	background-color: rgba(100,100,100,1);
+  color: white;
+}
+
+tr:not(.header):hover .deletecase2 {
+	background-color: rgba(100,100,100,1);
+  color: white;
+}
+
+.deletecase {
+  width: 40px;
+  background-color: rgba(150,150,150,0.95);
+  border-bottom: 1px solid #ddd;
+}
+
+.deletecase2 {
+  width: 40px;
+  background-color: rgba(200,200,200,0.95);
+  border-bottom: 1px solid #ddd;
+}
