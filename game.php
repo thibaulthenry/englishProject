@@ -101,7 +101,6 @@
 					$(this).removeClass('unfound').addClass('found');
 					$(this).css("background-color", "#AAFFAA");
 					$(this).css("color", "#009700");
-					$('.grid').css("border-color", "005000");
 					//$(this).attr('readonly', 'readonly');
 				}
 			});
@@ -109,6 +108,7 @@
 			if ($("input[letter]:not(.blank)").length == $("input.found").length) {
 				$("#valid").hide();
 				$("#success").show();
+				$('.grid').css("border-color", "005000");
 				var audio = new Audio('static/sounds/tada.mp3');
 				audio.play();
 				ambiance.pause();
